@@ -110,6 +110,8 @@ export default function getSumOfHoods(
 
 <b>File: </b>[3-default-parameter.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/3-default-parameter.js)
 
+---
+
 <h3> Task 4 - Rest parameter syntax for functions </h3>
 
 Modify the following function to return the number of arguments passed to it using the rest parameter syntax
@@ -127,3 +129,15 @@ Example:
 ```
 
 <b> File: </b> [4-rest-parameter.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/4-rest-parameter.js)
+
+---
+
+<h3> Task 5- The wonders of spread syntax</h3>
+
+Using spread syntax, concatenate 2 arrays and each character of a string by modifying the function below. Your function body should be one line long.
+
+```javascript
+export default function concatArrays(array1, array2, string) {}
+```
+
+<b>File:</b> [5-spread-operator.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/5-spread-operator.js)
