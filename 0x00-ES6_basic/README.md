@@ -291,3 +291,32 @@ The function should return an object with the following format:
 ```
 
 <b>File:</b> [11-createEmployeesObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/11-createEmployeesObject.js)
+
+---
+
+<h3>Task 12 - Let's create a report object</h3>
+
+Write a function named `createReportObject` whose parameter, `employeesList`, is the return value of the previous function `createEmployeesObject`.
+
+```javascript
+export default function createReportObject(employeesList) {}
+```
+
+`createReportObject` should return an object containing the key `allEmployees` and a method property called `getNumberOfDepartments`.
+
+`allEmployees` is a key that maps to an object containing the department name and a list of all the employees in that department. If you’re having trouble, use the spread syntax.
+
+The method property receives `employeesList` and returns the number of departments. I would suggest suggest thinking back to the ES6 method property syntax.
+
+```javascript
+{
+  allEmployees: {
+     engineering: [
+          'John Doe',
+          'Guillaume Salva',
+     ],
+  },
+};
+```
+
+<b>File: </b>[12-createReportObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/12-createReportObject.js)
