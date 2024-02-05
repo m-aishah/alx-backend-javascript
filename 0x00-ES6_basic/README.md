@@ -81,7 +81,7 @@ export default function getNeighborhoodsList() {
 }
 ```
 
-<b>File: [2-arrow.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/2-arrow.js)
+<b>File: [2-arrow.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/2-arrow.js) </b>
 
 ---
 
