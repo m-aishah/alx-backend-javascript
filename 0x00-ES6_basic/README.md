@@ -39,4 +39,73 @@ export function taskNext() {
 }
 ```
 
-File: [0-constants.js](https://github.com/m-aishah/alx-backend-javascript/0x00-ES6_basic/0-constants.js.git)
+<b>File:</b> [0-constants.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/0-constants.js)
+
+---
+
+<h3> Task 1 - Block Scope </h3>
+
+Given what you’ve read about `var` and hoisting, modify the variables inside the function `taskBlock` so that the variables aren’t overwritten inside the conditional block.
+
+```javascript
+export default function taskBlock(trueOrFalse) {
+  var task = false;
+  var task2 = true;
+
+  if (trueOrFalse) {
+    var task = true;
+    var task2 = false;
+  }
+
+  return [task, task2];
+}
+```
+
+<b>File: </b> [1-block-scoped.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/1-block-scoped.js)
+
+---
+
+<h3> Task 2 - Arrow functions</h3>
+
+Rewrite the following standard function to use ES6’s arrow syntax of the function `add` (it will be an anonymous function after)
+
+```javascript
+export default function getNeighborhoodsList() {
+  this.sanFranciscoNeighborhoods = ["SOMA", "Union Square"];
+
+  const self = this;
+  this.addNeighborhood = function add(newNeighborhood) {
+    self.sanFranciscoNeighborhoods.push(newNeighborhood);
+    return self.sanFranciscoNeighborhoods;
+  };
+}
+```
+
+<b>File: [2-arrow.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/2-arrow.js) </b>
+
+---
+
+<h3>Task 3 - Parameter defaults</h3>
+
+Condense the internals of the following function to 1 line - without changing the name of each function/variable.
+
+Hint: The key here to define default parameter values for the function parameters.
+
+```javascript
+export default function getSumOfHoods(
+  initialNumber,
+  expansion1989,
+  expansion2019
+) {
+  if (expansion1989 === undefined) {
+    expansion1989 = 89;
+  }
+
+  if (expansion2019 === undefined) {
+    expansion2019 = 19;
+  }
+  return initialNumber + expansion1989 + expansion2019;
+}
+```
+
+<b>File: </b>[3-default-parameter.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/3-default-parameter.js)
