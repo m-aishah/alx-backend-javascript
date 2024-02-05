@@ -320,3 +320,17 @@ The method property receives `employeesList` and returns the number of departmen
 ```
 
 <b>File: </b>[12-createReportObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/12-createReportObject.js)
+
+---
+
+<h3>Task 13 - Iterating through report objects</h3>
+
+Write a function named `createIteratorObject`, that will take into argument a report Object created with the previous function `createReportObject`.
+
+This function will return an iterator to go through every employee in every department.
+
+```javascript
+export default function createIteratorObject(report) {}
+```
+
+<b>File:</b> [100-createIteratorObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/100-createIteratorObject.js)
