@@ -141,3 +141,33 @@ export default function concatArrays(array1, array2, string) {}
 ```
 
 <b>File:</b> [5-spread-operator.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/5-spread-operator.js)
+
+<h3> Task 6 -  Take advantage of template literals </h3>
+
+Rewrite the return statement to use a template literal so you can the substitute the variables you’ve defined.
+
+```javascript
+export default function getSanFranciscoDescription() {
+  const year = 2017;
+  const budget = {
+    income: "$119,868",
+    gdp: "$154.2 billion",
+    capita: "$178,479",
+  };
+
+  return (
+    "As of " +
+    year +
+    ", it was the seventh-highest income county in the United States" /
+      ", with a per capita personal income of " +
+    budget.income +
+    ". As of 2015, San Francisco" / " proper had a GDP of " +
+    budget.gdp +
+    ", and a GDP per capita of " +
+    budget.capita +
+    "."
+  );
+}
+```
+
+<b>File: </b>[6-string-interpolation.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/6-string-interpolation.js)
