@@ -82,3 +82,30 @@ export default function getNeighborhoodsList() {
 ```
 
 <b>File: [2-arrow.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/2-arrow.js)
+
+---
+
+<h3>Task 3 - Parameter defaults</h3>
+
+Condense the internals of the following function to 1 line - without changing the name of each function/variable.
+
+Hint: The key here to define default parameter values for the function parameters.
+
+```javascript
+export default function getSumOfHoods(
+  initialNumber,
+  expansion1989,
+  expansion2019
+) {
+  if (expansion1989 === undefined) {
+    expansion1989 = 89;
+  }
+
+  if (expansion2019 === undefined) {
+    expansion2019 = 19;
+  }
+  return initialNumber + expansion1989 + expansion2019;
+}
+```
+
+<b>File: </b>[3-default-parameter.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/3-default-parameter.js)
