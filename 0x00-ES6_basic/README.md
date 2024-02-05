@@ -196,6 +196,8 @@ export default function getBudgetObject(income, gdp, capita) {
 
 <b>File:</b> [7-getBudgetObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/7-getBudgetObject.js)
 
+---
+
 <h3>Task 8 - No need to create empty objects before adding in properties</h3>
 
 Rewrite the `getBudgetForCurrentYear `function to use ES6 computed property names on the `budget` object
@@ -218,3 +220,30 @@ export default function getBudgetForCurrentYear(income, gdp, capita) {
 ```
 
 <b>File:</b> [8-getBudgetCurrentYear.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/8-getBudgetCurrentYear.js)
+
+---
+
+<h3>Task 9 - ES6 method properties</h3>
+
+Rewrite `getFullBudgetObject` to use ES6 method properties in the `fullBudget` object
+
+```javascripts
+mport getBudgetObject from './7-getBudgetObject.js';
+
+export default function getFullBudgetObject(income, gdp, capita) {
+  const budget = getBudgetObject(income, gdp, capita);
+  const fullBudget = {
+    ...budget,
+    getIncomeInDollars: function (income) {
+      return `$${income}`;
+    },
+    getIncomeInEuros: function (income) {
+      return `${income} euros`;
+    },
+  };
+
+  return fullBudget;
+}
+```
+
+<b>File:</b> [9-getFullBudget.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/9-getFullBudget.js)
