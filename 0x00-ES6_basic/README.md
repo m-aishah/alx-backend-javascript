@@ -39,4 +39,26 @@ export function taskNext() {
 }
 ```
 
-File: [0-constants.js](https://github.com/m-aishah/alx-backend-javascript/0x00-ES6_basic/0-constants.js.git)
+<b>File:</b> [0-constants.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/0-constants.js)
+
+---
+
+<h3> Task 1 - Block Scope </h3>
+
+Given what you’ve read about `var` and hoisting, modify the variables inside the function `taskBlock` so that the variables aren’t overwritten inside the conditional block.
+
+```javascript
+export default function taskBlock(trueOrFalse) {
+  var task = false;
+  var task2 = true;
+
+  if (trueOrFalse) {
+    var task = true;
+    var task2 = false;
+  }
+
+  return [task, task2];
+}
+```
+
+<b>File: </b> [1-block-scoped.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/1-block-scoped.js)
