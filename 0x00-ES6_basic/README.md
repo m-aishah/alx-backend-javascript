@@ -142,6 +142,8 @@ export default function concatArrays(array1, array2, string) {}
 
 <b>File:</b> [5-spread-operator.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/5-spread-operator.js)
 
+---
+
 <h3> Task 6 -  Take advantage of template literals </h3>
 
 Rewrite the return statement to use a template literal so you can the substitute the variables you’ve defined.
@@ -171,3 +173,25 @@ export default function getSanFranciscoDescription() {
 ```
 
 <b>File: </b>[6-string-interpolation.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/6-string-interpolation.js)
+
+---
+
+<h3>Task 7 - Object property value shorthand syntax </h3>
+
+Notice how the keys and the variable names are the same?
+
+Modify the following function’s budget object to simply use the keyname instead.
+
+```javascript
+export default function getBudgetObject(income, gdp, capita) {
+  const budget = {
+    income: income,
+    gdp: gdp,
+    capita: capita,
+  };
+
+  return budget;
+}
+```
+
+<b>File:</b> 7-getBudgetObject.js
