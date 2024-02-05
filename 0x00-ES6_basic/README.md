@@ -62,3 +62,23 @@ export default function taskBlock(trueOrFalse) {
 ```
 
 <b>File: </b> [1-block-scoped.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/1-block-scoped.js)
+
+---
+
+<h3> Task 2 - Arrow functions</h3>
+
+Rewrite the following standard function to use ES6’s arrow syntax of the function `add` (it will be an anonymous function after)
+
+```javascript
+export default function getNeighborhoodsList() {
+  this.sanFranciscoNeighborhoods = ["SOMA", "Union Square"];
+
+  const self = this;
+  this.addNeighborhood = function add(newNeighborhood) {
+    self.sanFranciscoNeighborhoods.push(newNeighborhood);
+    return self.sanFranciscoNeighborhoods;
+  };
+}
+```
+
+<b>File: [2-arrow.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/2-arrow.js)
