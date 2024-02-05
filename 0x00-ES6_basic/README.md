@@ -81,7 +81,7 @@ export default function getNeighborhoodsList() {
 }
 ```
 
-<b>File: [2-arrow.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/2-arrow.js) </b>
+<b>File:</b> [2-arrow.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/2-arrow.js)
 
 ---
 
@@ -109,3 +109,21 @@ export default function getSumOfHoods(
 ```
 
 <b>File: </b>[3-default-parameter.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/3-default-parameter.js)
+
+<h3> Task 4 - Rest parameter syntax for functions </h3>
+
+Modify the following function to return the number of arguments passed to it using the rest parameter syntax
+
+```javascript
+export default function returnHowManyArguments() {}
+```
+
+Example:
+
+```javascript
+> returnHowManyArguments("Hello", "Holberton", 2020);
+3
+>
+```
+
+<b> File: </b> [4-rest-parameter.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/4-rest-parameter.js)
