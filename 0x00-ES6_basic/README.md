@@ -266,3 +266,28 @@ export default function appendToEachArrayValue(array, appendString) {
 ```
 
 <b>File:</b> [10-loops.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/10-loops.js)
+
+---
+
+<h3>Task 11 - Iterator</h3>
+
+Write a function named `createEmployeesObject` that will receive two arguments:
+
+- `departmentName` (String)
+- `employees` (Array of Strings)
+
+```javascript
+export default function createEmployeesObject(departmentName, employees) {}
+```
+
+The function should return an object with the following format:
+
+```javascript
+{
+     $departmentName: [
+          $employees,
+     ],
+}
+```
+
+<b>File:</b> [11-createEmployeesObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/11-createEmployeesObject.js)
