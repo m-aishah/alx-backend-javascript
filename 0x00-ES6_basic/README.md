@@ -180,7 +180,7 @@ export default function getSanFranciscoDescription() {
 
 Notice how the keys and the variable names are the same?
 
-Modify the following function’s budget object to simply use the keyname instead.
+Modify the following function’s `budget `object to simply use the keyname instead.
 
 ```javascript
 export default function getBudgetObject(income, gdp, capita) {
@@ -194,4 +194,27 @@ export default function getBudgetObject(income, gdp, capita) {
 }
 ```
 
-<b>File:</b> 7-getBudgetObject.js
+<b>File:</b> [7-getBudgetObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/7-getBudgetObject.js)
+
+<h3>Task 8 - No need to create empty objects before adding in properties</h3>
+
+Rewrite the `getBudgetForCurrentYear `function to use ES6 computed property names on the `budget` object
+
+```javascript
+function getCurrentYear() {
+  const date = new Date();
+  return date.getFullYear();
+}
+
+export default function getBudgetForCurrentYear(income, gdp, capita) {
+  const budget = {};
+
+  budget[`income-${getCurrentYear()}`] = income;
+  budget[`gdp-${getCurrentYear()}`] = gdp;
+  budget[`capita-${getCurrentYear()}`] = capita;
+
+  return budget;
+}
+```
+
+<b>File:</b> [8-getBudgetCurrentYear.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/8-getBudgetCurrentYear.js)
