@@ -247,3 +247,22 @@ export default function getFullBudgetObject(income, gdp, capita) {
 ```
 
 <b>File:</b> [9-getFullBudget.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/9-getFullBudget.js)
+
+---
+
+<h3>10 - For...of Loops </h3>
+
+Rewrite the function `appendToEachArrayValue` to use ES6’s `for...of `operator. And don’t forget that `var` is not ES6-friendly.
+
+```javascript
+export default function appendToEachArrayValue(array, appendString) {
+  for (var idx in array) {
+    var value = array[idx];
+    array[idx] = appendString + value;
+  }
+
+  return array;
+}
+```
+
+<b>File:</b> [10-loops.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/10-loops.js)
