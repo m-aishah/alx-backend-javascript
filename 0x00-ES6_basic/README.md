@@ -1,6 +1,19 @@
 <h1> Overview </h1>
+In this project I was introduced to the ECMAScript 6.
 
 <h2> Concepts </h2>
+
+I learnt:
+
+- What ES6 is
+- New features introduced in ES6
+- The difference between a constant and a variable
+- Block-scoped variables
+- Arrow functions and function parameters default to them
+- Rest and spread function parameters
+- String templating in ES6
+- Object creation and their properties in ES6
+- Iterators and for-of loops
 
 <h2> Resources </h2>
 
@@ -334,3 +347,48 @@ export default function createIteratorObject(report) {}
 ```
 
 <b>File:</b> [100-createIteratorObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/100-createIteratorObject.js)
+
+---
+
+<h3>Task 14 - Iterate through objects</h3>
+
+Finally, write a function named `iterateThroughObject`. The function’s parameter `reportWithIterator` is the return value from `createIteratorObject`.
+
+```javascript
+export default function iterateThroughObject(reportWithIterator) {}
+```
+
+It should return every employee name in a string, separated by |
+
+```javascript
+{
+ allEmployees: {
+    engineering: [
+         'John Doe',
+         'Guillaume Salva',
+    ],
+ },
+ ...
+};
+```
+
+Should return `John Doe | Guillaume Salva`
+
+Reminder - the functions will be <i>imported</i> by the test suite.
+
+Full example:
+
+```javascript
+> employees = {
+      ...createEmployeesObject('engineering', engineering),
+      ...createEmployeesObject('design', design),
+    };
+>
+> const report = createReportObject(employees);
+> const reportWithIterator = createIteratorObject(report);
+> iterateThroughObject(reportWithIterator)
+'John Doe | Guillaume Salva | Kanye East | Jay Li'
+>
+```
+
+<b>File:</b> [101-iterateThroughObject.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x00-ES6_basic/101-iterateThroughObject.js)
