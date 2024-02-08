@@ -34,3 +34,13 @@ Implement a class named `ClassRoom`:
 <b>File:</b> [0-classroom.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x02-ES6_classes/0-classroom.js)
 
 ---
+
+<h3>Task 1- Let's make some classrooms</h3>
+
+Import the ClassRoom class from 0-classroom.js.
+
+Implement a function named `initializeRooms`. It should return an array of 3 `ClassRoom` objects with the sizes 19, 20, and 34 (in this order).
+
+<b>File:</b> [1-make_classrooms.js](https://github.com/m-aishah/alx-backend-javascript/blob/main/0x02-ES6_classes/1-make_classrooms.js)
+
+---
